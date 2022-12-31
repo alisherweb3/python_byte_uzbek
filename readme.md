@@ -141,18 +141,20 @@ Agar siz Komodo Edit dan foydalansangiz.
 
 pythonda izoh (comment) qolditrish uchun, # tugmasini qo'yish kifoya
 
-Masalan: print('Hello world") # print -- bu funksiya
-
+Masalan: 
+```py
+print('Hello world") # print -- bu funksiya
+```
 yoki
-
+```py
   //# print -- bu funksiya
   print('hello world')
- 
+ ```
 ## 4.2 Adabiy konstantalar
 
 
 ## 4.3 Raqamlar
-
+  Pythonda raqamlar 3 ga: butun, o'zgaruvchAn nuqtali, kompleksli ga bo'linadi.
 
 ## 4.4 Qatorlar
 
@@ -163,7 +165,44 @@ yoki
 
 # 5. Operator va Ifodalar
 
+Pythondagi interpretatordagi commanda
+
+```py
+>>> 2 + 3
+5
+>>> 3 * 5
+15
+```
+
+
+
+5.5 
+
+expression.py
+```py
+length = 5
+breadth = 2
+
+area = length * breadth
+print('maydon kengligi', area,'ga teng')
+print('periment esa', 2 * (length + breadth),'ga teng')
+```
+
+
+
+
+
 # 6. Buyruqlar oqimi (command flow)
+
+if.py
+```py
+number = 23
+guess = int(input('Butun raqamni kiriting : '))
+
+if guess == number:
+       print('tabriklaymiz')
+       
+```       
 
 # 7. Funksiyalar
 
