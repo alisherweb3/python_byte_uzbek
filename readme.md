@@ -202,7 +202,62 @@ guess = int(input('Butun raqamni kiriting : '))
 if guess == number:
        print('tabriklaymiz')
        
-```       
+```      
+
+
+## 6.2 while operatori
+
+while.py
+```py
+rumber = 23
+running = True
+
+while running:
+       guess = int(input('Butun raqamni kiriting : '))
+       
+       if guess == number:
+              print('Tabriklayman, siz topdingiz.')
+              running = False # bu while tsiklini to'xtatadi
+       elif guess < number:
+              print('Yoq, tanlangan raqam bundan kop.')
+       else:
+              print('Yoq, tanlangan raqam bundan kam.')
+else:
+       print('while tsikli tugadi ')
+       # Bu yerda siz xoxlagan bajariladi
+       
+print('Tugatilishi.')
+```
+
+
+
+## 6.3 For tsikli uchun
+
+for.py
+```py
+for i in range(1, 5):
+       print(i)
+else:
+       print('for tsikli tugagan')
+```
+
+6.4 break operatori
+
+break.py
+```
+while True:
+       s = input('Nimadir kiriting :')
+       if s == 'chiqish':
+              break
+       print('soz uzunligi:', lens(s))
+print('tugadi')
+```
+
+
+
+
+
+
 
 # 7. Funksiyalar
 
