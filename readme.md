@@ -323,6 +323,56 @@ keyingi foydalanish uchun sys.argv da buyruq qatori argumentlari
 
 # 14. Standart kutubxonalar (standart library)
 
+## 14.1 sys moduli
+
+```py
+import sys
+sys.version_info 
+```
+
+
+versioncheck.py
+```py
+import sys, warnings
+if sys.version_info[0] <3:
+       warnings.warn("Bu dasturdan foydalanish uchun minimum \
+       Python 3.0 versiyasi kerak.",
+              RuntimeWarning)
+else:
+       print('Odatiy davom etish')
+```
+
+## 14.2 logging moduli
+
+use_logging.py
+```py
+import os, platform, logging
+
+if platform.platform().startwith('Windows'):
+       logging_file = os.path.join(os.getenv('HOMEDRIVE'), \
+       os.getenv('HOMEPATH'), \
+       'test.log')
+else:
+       logging_file = os.path.join(os.getenv('HOME'), 'test.log')
+       
+print('log ni saqlaymiz', logging file)
+
+logging.basicConfig(
+       level=logging.DEBUG,
+       format='%(asctime)s : %(levelname)s : %(message)s',
+       filename = logging_file,
+       filemode = 'w',
+)       
+
+logging.debug("dastur boshlanishi")
+logging.info("qaysidir harakatlar")
+logging.warning("dastur o'lyapti")
+```
+
+
+
+
+
 # 15. Qo'shimcha
 
 # 16. Keyin nima 
