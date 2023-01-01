@@ -263,15 +263,9 @@ print('tugadi')
 
 # 8. Modullar
 
-kodni funksiyaga ulab qayta ishlatishni o'rganib oldik. Lekin agar mana shu funksiyalarni, boshqa dasturlarda qayta ishlatishga to'g'ri kelsachi, nima qilish kerak? javob - modullar.
-
-Как можно использовать код повторно, помещая его в функции, мы уже видели. А что,
-если нам понадобится повторно использовать различные функции в других наших программах? Как вы уже, наверное, догадались, ответ – модули.
+Kodni funksiyaga ulab qayta ishlatishni o'rganib oldik. Lekin agar mana shu funksiyalarni, boshqa dasturlarda qayta ishlatishga to'g'ri kelsachi, nima qilish kerak? javob - modullar.
 
 Modullarni tayyorlashni har xil yo'llari bor. lekin eng oddiy yo'li bu funksiyalar va o'zgaruvchanlar joylashgan .py faylini ochish.
-
-Существуют разные способы составления модулей, но самый простой – это создать файл
-с расширением .py, содержащий функции и переменные.
 
 Yana boshqa yo'li - Python interpretatori yozilgan tilda modulni yozish. Masalan, C dasturlash tilidan foydalanib, kompilyatsiyadan keyin standart python interpretatoridan foydalanish.
 
@@ -289,7 +283,7 @@ for i in sys.argv:
 print('\n\nPYTHONPATH ozgaruvchisi', sys.path, '\n')
 ```
 
-### bu qanday ishlaydi:
+### Bu qanday ishlaydi:
 
 Birinchidan, import buyrug'i bilan sys modulini import qilamiz. Biz bu bilan sys modulidan foydalanishimizni aytamiz. sys moduli funksiyalari esa, Python va uning muhiti bilan bog'liq tizimga tegishli interpretatorga bog'liq.
 
@@ -312,6 +306,7 @@ dasturga uzatiladigan argumentlar quyidagidir3
 . Python saqlaydi
 keyingi foydalanish uchun sys.argv da buyruq qatori argumentlari
 
+(77 - bet)
 
 
 
