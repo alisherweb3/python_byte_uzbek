@@ -263,6 +263,59 @@ print('tugadi')
 
 # 8. Modullar
 
+kodni funksiyaga ulab qayta ishlatishni o'rganib oldik. Lekin agar mana shu funksiyalarni, boshqa dasturlarda qayta ishlatishga to'g'ri kelsachi, nima qilish kerak? javob - modullar.
+
+Как можно использовать код повторно, помещая его в функции, мы уже видели. А что,
+если нам понадобится повторно использовать различные функции в других наших программах? Как вы уже, наверное, догадались, ответ – модули.
+
+Modullarni tayyorlashni har xil yo'llari bor. lekin eng oddiy yo'li bu funksiyalar va o'zgaruvchanlar joylashgan .py faylini ochish.
+
+Существуют разные способы составления модулей, но самый простой – это создать файл
+с расширением .py, содержащий функции и переменные.
+
+Yana boshqa yo'li - Python interpretatori yozilgan tilda modulni yozish. Masalan, C dasturlash tilidan foydalanib, kompilyatsiyadan keyin standart python interpretatoridan foydalanish.
+
+Moduldagi funksiyalardan foydalanib, modulni boshqa dasturga import qilib olish mumkin. Pythondagi standart kutubxonalardan ham biz xuddi shunday foydalanamiz. Birinchi navbatda shu standart kutubxonalardan foydalanishni o'rganamiz.
+
+
+Misol: (using_sys.py)
+```py
+import sys
+
+print('commandni argumenti:')
+for i in sys.argv:
+       print(i)
+       
+print('\n\nPYTHONPATH ozgaruvchisi', sys.path, '\n')
+```
+
+### bu qanday ishlaydi:
+
+Birinchidan, import buyrug'i bilan sys modulini import qilamiz. Biz bu bilan sys modulidan foydalanishimizni aytamiz. sys moduli funksiyalari esa, Python va uning muhiti bilan bog'liq tizimga tegishli interpretatorga bog'liq.
+
+Python import sys buyrug'ini bajarganda, u sys modulini qidiradi. Bunday holda, bu tizimga o'rnatilgan modullardan biri va Python uni qayerdan qidirishni biladi.
+
+Agar u kompilyatsiya qilinmagan modul bo'lsa, Python Interpretatori uni sys.path o'zgaruvchisidagi ro'yxatdagi kataloglardan qidiradi. Agar modul topilsa, modul korpusidagi buyruqlar bajariladi va u mavjud bo'ladi. E'tibor bering, modulni ishga tushirish faqat birinchi marta import qilinganida sodir bo'ladi.
+
+Sys modulidagi argv o'zgaruvchisiga nuqta yordamida kirish mumkin,
+bular. sys.argv. Bu ushbu nom sys modulining bir qismi ekanligini aniq ko'rsatadi.
+Ushbu belgining yana bir afzalligi shundaki, bu nom argv o'zgaruvchisi nomiga zid kelmaydi.
+dastur.
+
+sys.argv o'zgaruvchisi satrlar ro'yxatidir (ro'yxatlar keyingi bobda batafsil muhokama qilinadi). U buyruq qatori argumentlari ro'yxatini o'z ichiga oladi, ya'ni. argumentlar buyruq satridan dasturga uzatiladi.
+
+Agar siz dasturlarni yozish va ishga tushirish uchun ishlab chiqish muhitidan2 foydalansangiz,
+buyruq qatori parametrlarini o'tkazish variantini uning menyusidan qidiring.
+Bizning misolimizda, biz "python using_sys.py" ni ishga tushirganimizda, biz shundaymiz
+argumentlar", biz using_sys.py modulini python buyrug'i bilan ishga tushiramiz va shu bilan,
+dasturga uzatiladigan argumentlar quyidagidir3
+. Python saqlaydi
+keyingi foydalanish uchun sys.argv da buyruq qatori argumentlari
+
+
+
+
+
 # 9. Ma'lumomotlar tuzulishi (Data Structure)
 
 # 10. Muammolarni hal qilish (problem solving) -- (решения задач)
